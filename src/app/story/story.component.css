@@ -1,0 +1,27 @@
+:host {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+.wrapper {
+    border: 1px solid black;
+    box-shadow: 2px 2px 1.5px rgba(0,0,0,0.5);
+    display: inline-block;
+    margin: 10% auto;
+    height: 300px;
+    width: 300px;
+    color: white;
+    background-color: DARKORANGE;   
+}
+
+#ticketLine {
+    margin: 0 10%;
+}
+.hiddenwords {
+    margin-top: 30%;
+}
+.hiddenwords2 {
+    color: darkorange;
+}
+
