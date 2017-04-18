@@ -14,7 +14,6 @@
     color: white;
     background-color: DARKORANGE;   
 }
-
 #ticketLine {
     margin: 0 10%;
 }
@@ -23,5 +22,15 @@
 }
 .hiddenwords2 {
     color: darkorange;
+}
+.linky {
+    text-decoration: none;
+    color: darkorange; 
+    transition: color 1s;
+}
+.linky:hover {
+    color: red;
+    text-decoration: none;
+    transition: color 1s;
 }
 
