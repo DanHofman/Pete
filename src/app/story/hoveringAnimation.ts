@@ -3,11 +3,15 @@ import { trigger, state, animate, transition, style } from '@angular/animations'
 export const hoveringAnimationTrigger = trigger("Hovering", [
     state("default", style({
         color: 'white',
-        'box-shadow': '2px 2px 1.5px rgba(0,0,0,0.5)'
+        transform: 'scale(1)',
+        'box-shadow': '0px 0px 0px rgba(0,0,0,0.5)'
     })),
     state("hovered", style({
-        color: 'red',
-        'box-shadow': '1px 15px 10px red'
+        color: 'crimson',
+        'font-size': '25px',
+        transform: 'scale(1.05)',
+        'box-shadow': '0px 15px 10px red',
+        
     })),
     transition('default <=> hovered', animate(500))
 ])
@@ -16,15 +20,18 @@ export const hoveringLettersTrigger = trigger("WordsHover", [
     state('default', style({
         'text-decoration': 'none',
         'font-weight': 'bold',
-        color: 'DARKORANGE',
+        'font-size': '16px',
+        color: 'transparent',
         'list-style': 'none',
+        'text-shadow': '0px 0px 0px transparent'
     })),
     state('hovered', style({
         'text-decoration': 'none',
-        'font-size': '15px',
+        'font-size': '16px',
         'font-weight': 'bold',
-        color: 'red',
+        color: 'black',
         'list-style': 'none',
+        'text-shadow': '0.1px 0.1px 0.1px red'
     })),
-    transition('default <=> hovered', animate(1000))
+    transition('default <=> hovered', animate(800))
 ])

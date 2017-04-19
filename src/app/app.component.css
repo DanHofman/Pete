@@ -2,6 +2,7 @@
     display: block;
     height: 100vh;
     background-color: DARKORANGE;
+    position: relative;
 }
 .fa-car {
     color: darkred;
@@ -26,33 +27,39 @@
     background-color: DARKORANGE;
 }
 .footer{
-    margin-top: 4%;
-    position: relative;
+    display: block;
+    bottom: 0;
+    text-align: center;
+    background-color: darkorange;
 }
 .story {
     background-image: url('../assets/car.jpg');
     background-size: cover;
+    height: 780px;
 }
 #by {
+    margin-top: 20px;
     color: white;
     text-align: center;
     font-size: 15px;
     font-family: 'Asar', serif;
 }
 #imagecredit {
-    position: absolute;
-    bottom: 0;
     color: black;
     text-decoration: none;
     font-size: 10px;
 }
 
-a:link {
+a:link  {
     text-decoration: none;
     color: black;
 }
 
-a:visited {
+a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+}
+/*a:visited {
     text-decoration: none;
     color: white;
 }
@@ -65,4 +72,4 @@ a:hover {
 a:active {
     text-decoration: none;
     color: white;
-}
+}*/
